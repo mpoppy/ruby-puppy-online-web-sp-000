@@ -10,10 +10,9 @@ class Dog
   end
 
   def self.all
-    @@all each do |name, value|
+    @@all.each do |name, value|
       puts value
     end
-
   end
 
   def self.clear_all
@@ -21,7 +20,7 @@ class Dog
   end
 
 end
-#
+
  kramer = Dog.new("Kramer")
  spike = Dog.new("Spike")
  joey = Dog.new("Joey")
